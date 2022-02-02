@@ -6,11 +6,11 @@ import Work from './Components/Work';
 class App extends Component {
   render() {
     return (
-      <div>
+      <form>
         <General />
         <Education />
         <Work />
-      </div>
+      </form>
     );
   }
 }
