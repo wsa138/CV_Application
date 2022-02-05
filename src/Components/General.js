@@ -19,7 +19,7 @@ class General extends Component {
 
   render() {
     return (
-      <form>
+      <div>
         <label>
           First Name:
           <input
@@ -62,7 +62,7 @@ class General extends Component {
             onChange={this.handleUserInput}
           ></input>
         </label>
-      </form>
+      </div>
     );
   }
 }
