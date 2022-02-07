@@ -18,7 +18,7 @@ class Work extends Component {
           Job:
           <input
             type=""
-            name=""
+            name="job"
             value=""
             onChange={this.handleUserInput}
           ></input>
@@ -29,7 +29,7 @@ class Work extends Component {
           Position Title:
           <input
             type=""
-            name=""
+            name="positionTitle"
             value=""
             onChange={this.handleUserInput}
           ></input>
@@ -40,7 +40,7 @@ class Work extends Component {
           Main Tasks:
           <input
             type=""
-            name=""
+            name="mainTasks"
             value=""
             onChange={this.handleUserInput}
           ></input>
@@ -51,7 +51,7 @@ class Work extends Component {
           Start Date:
           <input
             type=""
-            name=""
+            name="startDate"
             value=""
             onChange={this.handleUserInput}
           ></input>
@@ -62,7 +62,7 @@ class Work extends Component {
           End Date:
           <input
             type=""
-            name=""
+            name="endDate"
             value=""
             onChange={this.handleUserInput}
           ></input>
