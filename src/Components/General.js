@@ -62,6 +62,7 @@ class General extends Component {
             onChange={this.handleUserInput}
           ></input>
         </label>
+        <br />
       </div>
     );
   }
