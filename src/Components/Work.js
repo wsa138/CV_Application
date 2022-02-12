@@ -3,23 +3,34 @@ import React, { Component } from 'react';
 class Work extends Component {
   constructor(props) {
     super(props);
+    this.state = {
+      job: '',
+      positionTitle: '',
+      mainTasks: '',
+      startDate: '',
+      endDate: '',
+    };
 
     this.handleUserInput = this.handleUserInput.bind(this);
   }
 
-  handleUserInput() {
-    console.log('User Input');
+  handleUserInput(event) {
+    const value = event.target.value;
+    const name = event.target.name;
+
+    this.setState({ [name]: value });
   }
 
   render() {
+    console.log(this.state.startDate);
     return (
       <div>
         <label>
           Job:
           <input
-            type=""
+            type="text"
             name="job"
-            value=""
+            value={this.state.job}
             onChange={this.handleUserInput}
           ></input>
         </label>
@@ -28,9 +39,9 @@ class Work extends Component {
         <label>
           Position Title:
           <input
-            type=""
+            type="text"
             name="positionTitle"
-            value=""
+            value={this.state.position}
             onChange={this.handleUserInput}
           ></input>
         </label>
@@ -39,9 +50,9 @@ class Work extends Component {
         <label>
           Main Tasks:
           <input
-            type=""
+            type="text"
             name="mainTasks"
-            value=""
+            value={this.state.mainTasks}
             onChange={this.handleUserInput}
           ></input>
         </label>
@@ -50,9 +61,9 @@ class Work extends Component {
         <label>
           Start Date:
           <input
-            type=""
+            type="date"
             name="startDate"
-            value=""
+            value={this.state.startDate}
             onChange={this.handleUserInput}
           ></input>
         </label>
@@ -61,9 +72,9 @@ class Work extends Component {
         <label>
           End Date:
           <input
-            type=""
+            type="date"
             name="endDate"
-            value=""
+            value={this.state.endDate}
             onChange={this.handleUserInput}
           ></input>
         </label>
