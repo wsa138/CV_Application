@@ -24,7 +24,7 @@ class Work extends Component {
   render() {
     console.log(this.state.startDate);
     return (
-      <div>
+      <div className="form-component-section">
         <label>
           Job:
           <input

@@ -19,7 +19,7 @@ class General extends Component {
 
   render() {
     return (
-      <div>
+      <div className="form-component-section">
         <label>
           First Name:
           <input
