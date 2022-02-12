@@ -21,7 +21,7 @@ class General extends Component {
     return (
       <div className="form-component-section">
         <label>
-          First Name:
+          <p>First Name:</p>
           <input
             type="text"
             name="firstName"
@@ -32,7 +32,7 @@ class General extends Component {
         <br />
 
         <label>
-          Last Name:
+          <p>Last Name:</p>
           <input
             type="text"
             name="lastName"
@@ -43,7 +43,7 @@ class General extends Component {
         <br />
 
         <label>
-          Email:
+          <p>Email:</p>
           <input
             type="text"
             name="email"
@@ -54,7 +54,7 @@ class General extends Component {
         <br />
 
         <label>
-          Phone Number:
+          <p>Phone Number:</p>
           <input
             type="text"
             name="phoneNumber"
