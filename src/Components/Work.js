@@ -25,59 +25,59 @@ class Work extends Component {
     console.log(this.state.startDate);
     return (
       <div className="form-component-section">
-        <label>
-          Job:
-          <input
-            type="text"
-            name="job"
-            value={this.state.job}
-            onChange={this.handleUserInput}
-          ></input>
-        </label>
+        <label for="job">Job:</label>
+        <input
+          id="job"
+          type="text"
+          name="job"
+          value={this.state.job}
+          onChange={this.handleUserInput}
+        ></input>
+
         <br />
 
-        <label>
-          Position Title:
-          <input
-            type="text"
-            name="positionTitle"
-            value={this.state.position}
-            onChange={this.handleUserInput}
-          ></input>
-        </label>
+        <label for="positionTitle">Position Title:</label>
+        <input
+          id="positionTitle"
+          type="text"
+          name="positionTitle"
+          value={this.state.position}
+          onChange={this.handleUserInput}
+        ></input>
+
         <br />
 
-        <label>
-          Main Tasks:
-          <input
-            type="text"
-            name="mainTasks"
-            value={this.state.mainTasks}
-            onChange={this.handleUserInput}
-          ></input>
-        </label>
+        <label for="mainTasks">Main Tasks:</label>
+        <input
+          id="mainTasks"
+          type="text"
+          name="mainTasks"
+          value={this.state.mainTasks}
+          onChange={this.handleUserInput}
+        ></input>
+
         <br />
 
-        <label>
-          Start Date:
-          <input
-            type="date"
-            name="startDate"
-            value={this.state.startDate}
-            onChange={this.handleUserInput}
-          ></input>
-        </label>
+        <label for="startDate">Start Date:</label>
+        <input
+          id="startDate"
+          type="date"
+          name="startDate"
+          value={this.state.startDate}
+          onChange={this.handleUserInput}
+        ></input>
+
         <br />
 
-        <label>
-          End Date:
-          <input
-            type="date"
-            name="endDate"
-            value={this.state.endDate}
-            onChange={this.handleUserInput}
-          ></input>
-        </label>
+        <label for="endDate">End Date:</label>
+        <input
+          id="endDate"
+          type="date"
+          name="endDate"
+          value={this.state.endDate}
+          onChange={this.handleUserInput}
+        ></input>
+
         <br />
       </div>
     );
