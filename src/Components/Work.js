@@ -37,7 +37,7 @@ class Work extends Component {
         <br />
 
         <label>
-          Position Title:
+          <p>Position Title:</p>
           <input
             type="text"
             name="positionTitle"
@@ -48,7 +48,7 @@ class Work extends Component {
         <br />
 
         <label>
-          Main Tasks:
+          <p>Main Tasks:</p>
           <input
             type="text"
             name="mainTasks"
@@ -59,7 +59,7 @@ class Work extends Component {
         <br />
 
         <label>
-          Start Date:
+          <p>Start Date:</p>
           <input
             type="date"
             name="startDate"
@@ -70,7 +70,7 @@ class Work extends Component {
         <br />
 
         <label>
-          End Date:
+          <p>End Date:</p>
           <input
             type="date"
             name="endDate"

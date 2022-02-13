@@ -24,7 +24,7 @@ class Education extends Component {
     return (
       <div className="form-component-section">
         <label>
-          College:
+          <p>College:</p>
           <input
             type="text"
             name="college"
@@ -35,7 +35,7 @@ class Education extends Component {
         <br />
 
         <label>
-          Major:
+          <p>Major:</p>
           <input
             type="text"
             name="major"
@@ -46,7 +46,7 @@ class Education extends Component {
         <br />
 
         <label>
-          Degree Awarded:
+          <p>Degree Awarded:</p>
           <select
             name="degree"
             value={this.state.degree}
@@ -62,7 +62,7 @@ class Education extends Component {
         <br />
 
         <label>
-          Date:
+          <p>Date:</p>
           <input
             type="date"
             name="date"
