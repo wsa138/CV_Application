@@ -20,48 +20,48 @@ class General extends Component {
   render() {
     return (
       <div className="form-component-section">
-        <label>
-          First Name:
-          <input
-            type="text"
-            name="firstName"
-            value={this.state.firstName}
-            onChange={this.handleUserInput}
-          ></input>
-        </label>
+        <label for="firtName">First Name:</label>
+        <input
+          id="firtName"
+          type="text"
+          name="firstName"
+          value={this.state.firstName}
+          onChange={this.handleUserInput}
+        ></input>
+
         <br />
 
-        <label>
-          Last Name:
-          <input
-            type="text"
-            name="lastName"
-            value={this.state.lastName}
-            onChange={this.handleUserInput}
-          ></input>
-        </label>
+        <label for="lastName">Last Name:</label>
+        <input
+          id="lastName"
+          type="text"
+          name="lastName"
+          value={this.state.lastName}
+          onChange={this.handleUserInput}
+        ></input>
+
         <br />
 
-        <label>
-          Email:
-          <input
-            type="text"
-            name="email"
-            value={this.state.email}
-            onChange={this.handleUserInput}
-          ></input>
-        </label>
+        <label for="email">Email:</label>
+        <input
+          id="email"
+          type="text"
+          name="email"
+          value={this.state.email}
+          onChange={this.handleUserInput}
+        ></input>
+
         <br />
 
-        <label>
-          Phone Number:
-          <input
-            type="text"
-            name="phoneNumber"
-            value={this.state.phoneNumber}
-            onChange={this.handleUserInput}
-          ></input>
-        </label>
+        <label for="phoneNumber">Phone Number:</label>
+        <input
+          id="phoneNumber"
+          type="text"
+          name="phoneNumber"
+          value={this.state.phoneNumber}
+          onChange={this.handleUserInput}
+        ></input>
+
         <br />
       </div>
     );
