@@ -7,12 +7,40 @@ import './style.css';
 class App extends Component {
   constructor(props) {
     super(props);
+    this.state = {
+      generalSection: {
+        visible: false,
+      },
+      educationSection: {
+        visible: false,
+      },
+      workSection: {
+        visible: false,
+      },
+    };
 
     this.handleSubmit = this.handleSubmit.bind(this);
+    this.expandSection = this.expandSection.bind(this);
   }
 
   handleSubmit(e) {
     e.preventDefault();
+  }
+
+  expandSection(event) {
+    let section = event.target.getAttribute('name');
+    let prevVisibility = this.state[section].visible;
+    console.log(prevVisibility);
+    console.log(this.state);
+
+    this.setState((prevState) => {
+      return {
+        ...prevState,
+        [section]: {
+          visible: !prevVisibility,
+        },
+      };
+    });
   }
 
   render() {
@@ -20,9 +48,23 @@ class App extends Component {
       <div id="main-container">
         <h1>CV Application Builder</h1>
         <form>
-          <General />
-          <Education />
-          <Work />
+          <h2>General Info</h2>
+          <h3 name="generalSection" onClick={this.expandSection}>
+            +
+          </h3>
+          {this.state.generalSection.visible ? <General /> : null}
+
+          <h2>Education</h2>
+          <h3 name="educationSection" onClick={this.expandSection}>
+            +
+          </h3>
+          {this.state.educationSection.visible ? <Education /> : null}
+
+          <h2>Work Experience</h2>
+          <h3 name="workSection" onClick={this.expandSection}>
+            +
+          </h3>
+          {this.state.workSection.visible ? <Work /> : null}
           <button onClick={this.handleSubmit}>Submit</button>
         </form>
       </div>

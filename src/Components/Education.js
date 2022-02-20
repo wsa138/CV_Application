@@ -23,7 +23,6 @@ class Education extends Component {
   render() {
     return (
       <div>
-        <h2>Education</h2>
         <section className="form-component-section">
           <label for="college">College:</label>
           <input

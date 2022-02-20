@@ -20,7 +20,6 @@ class General extends Component {
   render() {
     return (
       <div>
-        <h2>General</h2>
         <section className="form-component-section">
           <label for="firtName">First Name:</label>
           <input
