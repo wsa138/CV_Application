@@ -5,6 +5,16 @@ import Work from './Components/Work';
 import './style.css';
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+
+    this.handleSubmit = this.handleSubmit.bind(this);
+  }
+
+  handleSubmit(e) {
+    e.preventDefault();
+  }
+
   render() {
     return (
       <div id="main-container">
@@ -13,6 +23,7 @@ class App extends Component {
           <General />
           <Education />
           <Work />
+          <button onClick={this.handleSubmit}>Submit</button>
         </form>
       </div>
     );
