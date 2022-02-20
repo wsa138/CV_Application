@@ -3,21 +3,11 @@ import React, { Component } from 'react';
 class General extends Component {
   constructor(props) {
     super(props);
-    this.state = {
-      firstName: '',
-      lastName: '',
-      email: '',
-      phoneNumber: '',
-    };
-    this.handleUserInput = this.handleUserInput.bind(this);
-  }
-
-  handleUserInput(event) {
-    const { name, value } = event.target;
-    this.setState({ [name]: value });
+    this.state = {};
   }
 
   render() {
+    let generalState = this.props.generalState;
     return (
       <div>
         <section className="form-component-section">
@@ -26,8 +16,8 @@ class General extends Component {
             id="firtName"
             type="text"
             name="firstName"
-            value={this.state.firstName}
-            onChange={this.handleUserInput}
+            value={generalState.firstName}
+            onChange={this.props.changeGeneral}
           ></input>
 
           <br />
@@ -37,8 +27,8 @@ class General extends Component {
             id="lastName"
             type="text"
             name="lastName"
-            value={this.state.lastName}
-            onChange={this.handleUserInput}
+            value={generalState.lastName}
+            onChange={this.props.changeGeneral}
           ></input>
 
           <br />
@@ -48,8 +38,8 @@ class General extends Component {
             id="email"
             type="text"
             name="email"
-            value={this.state.email}
-            onChange={this.handleUserInput}
+            value={generalState.email}
+            onChange={this.props.changeGeneral}
           ></input>
 
           <br />
@@ -59,8 +49,8 @@ class General extends Component {
             id="phoneNumber"
             type="text"
             name="phoneNumber"
-            value={this.state.phoneNumber}
-            onChange={this.handleUserInput}
+            value={generalState.phoneNumber}
+            onChange={this.props.changeGeneral}
           ></input>
 
           <br />

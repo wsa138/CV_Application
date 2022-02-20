@@ -17,10 +17,18 @@ class App extends Component {
       workSection: {
         visible: false,
       },
+
+      generalState: {
+        firstName: '',
+        lastName: '',
+        email: '',
+        phoneNumber: '',
+      },
     };
 
     this.handleSubmit = this.handleSubmit.bind(this);
     this.expandSection = this.expandSection.bind(this);
+    this.changeGeneral = this.changeGeneral.bind(this);
   }
 
   handleSubmit(e) {
@@ -43,7 +51,21 @@ class App extends Component {
     });
   }
 
+  changeGeneral(event) {
+    const { name, value } = event.target;
+    this.setState((prevState) => {
+      return {
+        ...prevState,
+        generalState: {
+          ...this.state.generalState,
+          [name]: value,
+        },
+      };
+    });
+  }
+
   render() {
+    console.log(this.state.generalState);
     return (
       <div id="main-container">
         <h1>CV Application Builder</h1>
@@ -52,7 +74,12 @@ class App extends Component {
           <h3 name="generalSection" onClick={this.expandSection}>
             +
           </h3>
-          {this.state.generalSection.visible ? <General /> : null}
+          {this.state.generalSection.visible ? (
+            <General
+              generalState={this.state.generalState}
+              changeGeneral={this.changeGeneral}
+            />
+          ) : null}
 
           <h2>Education</h2>
           <h3 name="educationSection" onClick={this.expandSection}>
