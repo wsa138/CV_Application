@@ -19,50 +19,53 @@ class General extends Component {
 
   render() {
     return (
-      <div className="form-component-section">
-        <label for="firtName">First Name:</label>
-        <input
-          id="firtName"
-          type="text"
-          name="firstName"
-          value={this.state.firstName}
-          onChange={this.handleUserInput}
-        ></input>
+      <div>
+        <h2>General</h2>
+        <section className="form-component-section">
+          <label for="firtName">First Name:</label>
+          <input
+            id="firtName"
+            type="text"
+            name="firstName"
+            value={this.state.firstName}
+            onChange={this.handleUserInput}
+          ></input>
 
-        <br />
+          <br />
 
-        <label for="lastName">Last Name:</label>
-        <input
-          id="lastName"
-          type="text"
-          name="lastName"
-          value={this.state.lastName}
-          onChange={this.handleUserInput}
-        ></input>
+          <label for="lastName">Last Name:</label>
+          <input
+            id="lastName"
+            type="text"
+            name="lastName"
+            value={this.state.lastName}
+            onChange={this.handleUserInput}
+          ></input>
 
-        <br />
+          <br />
 
-        <label for="email">Email:</label>
-        <input
-          id="email"
-          type="text"
-          name="email"
-          value={this.state.email}
-          onChange={this.handleUserInput}
-        ></input>
+          <label for="email">Email:</label>
+          <input
+            id="email"
+            type="text"
+            name="email"
+            value={this.state.email}
+            onChange={this.handleUserInput}
+          ></input>
 
-        <br />
+          <br />
 
-        <label for="phoneNumber">Phone Number:</label>
-        <input
-          id="phoneNumber"
-          type="text"
-          name="phoneNumber"
-          value={this.state.phoneNumber}
-          onChange={this.handleUserInput}
-        ></input>
+          <label for="phoneNumber">Phone Number:</label>
+          <input
+            id="phoneNumber"
+            type="text"
+            name="phoneNumber"
+            value={this.state.phoneNumber}
+            onChange={this.handleUserInput}
+          ></input>
 
-        <br />
+          <br />
+        </section>
       </div>
     );
   }

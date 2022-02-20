@@ -18,7 +18,7 @@ class App extends Component {
   render() {
     return (
       <div id="main-container">
-        <h1>CV Application</h1>
+        <h1>CV Application Builder</h1>
         <form>
           <General />
           <Education />
