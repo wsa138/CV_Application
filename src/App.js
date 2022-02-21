@@ -31,12 +31,21 @@ class App extends Component {
         degree: '',
         date: '',
       },
+
+      workState: {
+        job: '',
+        positionTitle: '',
+        mainTasks: '',
+        startDate: '',
+        endDate: '',
+      },
     };
 
     this.handleSubmit = this.handleSubmit.bind(this);
     this.expandSection = this.expandSection.bind(this);
     this.changeGeneral = this.changeGeneral.bind(this);
     this.changeEducation = this.changeEducation.bind(this);
+    this.changeWork = this.changeWork.bind(this);
   }
 
   handleSubmit(e) {
@@ -85,8 +94,21 @@ class App extends Component {
     });
   }
 
+  changeWork(event) {
+    const { name, value } = event.target;
+    this.setState((prevState) => {
+      return {
+        ...prevState,
+        workState: {
+          ...this.state.workState,
+          [name]: value,
+        },
+      };
+    });
+  }
+
   render() {
-    console.log(this.state.educationState);
+    console.log(this.state.workState);
     return (
       <div id="main-container">
         <h1>CV Application Builder</h1>
@@ -117,7 +139,12 @@ class App extends Component {
           <h3 name="workSection" onClick={this.expandSection}>
             +
           </h3>
-          {this.state.workSection.visible ? <Work /> : null}
+          {this.state.workSection.visible ? (
+            <Work
+              workState={this.state.workState}
+              changeWork={this.changeWork}
+            />
+          ) : null}
           <button onClick={this.handleSubmit}>Submit</button>
         </form>
       </div>

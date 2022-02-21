@@ -3,26 +3,11 @@ import React, { Component } from 'react';
 class Work extends Component {
   constructor(props) {
     super(props);
-    this.state = {
-      job: '',
-      positionTitle: '',
-      mainTasks: '',
-      startDate: '',
-      endDate: '',
-    };
-
-    this.handleUserInput = this.handleUserInput.bind(this);
-  }
-
-  handleUserInput(event) {
-    const value = event.target.value;
-    const name = event.target.name;
-
-    this.setState({ [name]: value });
+    this.state = {};
   }
 
   render() {
-    console.log(this.state.startDate);
+    let workState = this.props.workState;
     return (
       <div>
         <section className="form-component-section">
@@ -31,8 +16,8 @@ class Work extends Component {
             id="job"
             type="text"
             name="job"
-            value={this.state.job}
-            onChange={this.handleUserInput}
+            value={workState.job}
+            onChange={this.props.changeWork}
           ></input>
 
           <br />
@@ -42,8 +27,8 @@ class Work extends Component {
             id="positionTitle"
             type="text"
             name="positionTitle"
-            value={this.state.position}
-            onChange={this.handleUserInput}
+            value={workState.position}
+            onChange={this.props.changeWork}
           ></input>
 
           <br />
@@ -53,8 +38,8 @@ class Work extends Component {
             id="mainTasks"
             type="text"
             name="mainTasks"
-            value={this.state.mainTasks}
-            onChange={this.handleUserInput}
+            value={workState.mainTasks}
+            onChange={this.props.changeWork}
           ></input>
 
           <br />
@@ -64,8 +49,8 @@ class Work extends Component {
             id="startDate"
             type="date"
             name="startDate"
-            value={this.state.startDate}
-            onChange={this.handleUserInput}
+            value={workState.startDate}
+            onChange={this.props.changeWork}
           ></input>
 
           <br />
@@ -75,8 +60,8 @@ class Work extends Component {
             id="endDate"
             type="date"
             name="endDate"
-            value={this.state.endDate}
-            onChange={this.handleUserInput}
+            value={workState.endDate}
+            onChange={this.props.changeWork}
           ></input>
 
           <br />
