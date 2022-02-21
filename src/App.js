@@ -24,11 +24,19 @@ class App extends Component {
         email: '',
         phoneNumber: '',
       },
+
+      educationState: {
+        college: '',
+        major: '',
+        degree: '',
+        date: '',
+      },
     };
 
     this.handleSubmit = this.handleSubmit.bind(this);
     this.expandSection = this.expandSection.bind(this);
     this.changeGeneral = this.changeGeneral.bind(this);
+    this.changeEducation = this.changeEducation.bind(this);
   }
 
   handleSubmit(e) {
@@ -64,8 +72,21 @@ class App extends Component {
     });
   }
 
+  changeEducation(event) {
+    const { name, value } = event.target;
+    this.setState((prevState) => {
+      return {
+        ...prevState,
+        educationState: {
+          ...this.state.educationState,
+          [name]: value,
+        },
+      };
+    });
+  }
+
   render() {
-    console.log(this.state.generalState);
+    console.log(this.state.educationState);
     return (
       <div id="main-container">
         <h1>CV Application Builder</h1>
@@ -85,7 +106,12 @@ class App extends Component {
           <h3 name="educationSection" onClick={this.expandSection}>
             +
           </h3>
-          {this.state.educationSection.visible ? <Education /> : null}
+          {this.state.educationSection.visible ? (
+            <Education
+              educationState={this.state.educationState}
+              changeEducation={this.changeEducation}
+            />
+          ) : null}
 
           <h2>Work Experience</h2>
           <h3 name="workSection" onClick={this.expandSection}>

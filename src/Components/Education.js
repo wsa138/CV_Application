@@ -3,24 +3,11 @@ import React, { Component } from 'react';
 class Education extends Component {
   constructor(props) {
     super(props);
-    this.state = {
-      college: '',
-      major: '',
-      degree: '',
-      date: '',
-    };
-
-    this.handleUserInput = this.handleUserInput.bind(this);
-  }
-
-  handleUserInput(event) {
-    const { name, value } = event.target;
-    this.setState({
-      [name]: value,
-    });
+    this.state = {};
   }
 
   render() {
+    let educationState = this.props.educationState;
     return (
       <div>
         <section className="form-component-section">
@@ -29,8 +16,8 @@ class Education extends Component {
             id="college"
             type="text"
             name="college"
-            value={this.state.college}
-            onChange={this.handleUserInput}
+            value={educationState.college}
+            onChange={this.props.changeEducation}
           ></input>
 
           <br />
@@ -40,8 +27,8 @@ class Education extends Component {
             id="major"
             type="text"
             name="major"
-            value={this.state.major}
-            onChange={this.handleUserInput}
+            value={educationState.major}
+            onChange={this.props.changeEducation}
           ></input>
 
           <br />
@@ -50,8 +37,8 @@ class Education extends Component {
           <select
             id="degree"
             name="degree"
-            value={this.state.degree}
-            onChange={this.handleUserInput}
+            value={educationState.degree}
+            onChange={this.props.changeEducation}
           >
             <option value="">--Please Select One--</option>
             <option value="noDegree">No Degree</option>
@@ -67,8 +54,8 @@ class Education extends Component {
             id="date"
             type="date"
             name="date"
-            value={this.state.date}
-            onChange={this.handleUserInput}
+            value={educationState.date}
+            onChange={this.props.changeEducation}
           ></input>
 
           <br />
