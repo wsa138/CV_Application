@@ -19,6 +19,14 @@ class CV extends Component {
               <h4>Name</h4>
               <p>{`${generalInfo.firstName} ${generalInfo.lastName}`}</p>
             </div>
+            <div id="emailDisplay">
+              <h4>Email</h4>
+              <p>{generalInfo.email}</p>
+            </div>
+            <div id="phoneDisplay">
+              <h4>Phone Number</h4>
+              <p>{generalInfo.phoneNumber}</p>
+            </div>
           </div>
         </section>
       </div>
