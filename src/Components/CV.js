@@ -28,6 +28,50 @@ class CV extends Component {
               <p>{generalInfo.phoneNumber}</p>
             </div>
           </div>
+
+          <h3>Education</h3>
+          <div className="infoDisplay">
+            <div id="collegeDisplay">
+              <h4>College</h4>
+              <p>{educationInfo.college}</p>
+            </div>
+            <div id="dateDisplay">
+              <h4>Date</h4>
+              <p>{educationInfo.date}</p>
+            </div>
+            <div id="degreeDisplay">
+              <h4>Degree</h4>
+              <p>{educationInfo.degree}</p>
+            </div>
+            <div id="majorDisplay">
+              <h4>Major</h4>
+              <p>{educationInfo.major}</p>
+            </div>
+          </div>
+
+          <h3>Work</h3>
+          <div className="infoDisplay">
+            <div id="jobDisplay">
+              <h4>Job</h4>
+              <p>{workInfo.job}</p>
+            </div>
+            <div id="positionTitleDisplay">
+              <h4>Position Title</h4>
+              <p>{workInfo.positionTitle}</p>
+            </div>
+            <div id="mainTasksDisplay">
+              <h4>Main Tasks</h4>
+              <p>{workInfo.mainTasks}</p>
+            </div>
+            <div id="startDateDisplay">
+              <h4>Start Date</h4>
+              <p>{workInfo.startDate}</p>
+            </div>
+            <div id="endDateDisplay">
+              <h4>End Date</h4>
+              <p>{workInfo.endDate}</p>
+            </div>
+          </div>
         </section>
       </div>
     );
