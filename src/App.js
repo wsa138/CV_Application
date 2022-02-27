@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import General from './Components/General.js';
 import Education from './Components/Education';
 import Work from './Components/Work';
+import CV from './Components/CV';
 import './style.css';
 
 class App extends Component {
@@ -108,7 +109,6 @@ class App extends Component {
   }
 
   render() {
-    console.log(this.state.workState);
     return (
       <div id="main-container">
         <h1>CV Application Builder</h1>
@@ -147,6 +147,11 @@ class App extends Component {
           ) : null}
           <button onClick={this.handleSubmit}>Submit</button>
         </form>
+        <CV
+          educationInfo={this.state.educationState}
+          workInfo={this.state.workState}
+          generalInfo={this.state.generalState}
+        />
       </div>
     );
   }
