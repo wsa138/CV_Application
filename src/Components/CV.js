@@ -10,11 +10,17 @@ class CV extends Component {
     const educationInfo = this.props.educationInfo;
     const generalInfo = this.props.generalInfo;
     const workInfo = this.props.workInfo;
-    console.log(educationInfo, generalInfo, workInfo);
     return (
       <div>
-        <section id="displayedInfo"></section>
-        <div></div>
+        <section id="displayedInfo">
+          <h3>General Info</h3>
+          <div className="infoDisplay">
+            <div id="nameDisplay">
+              <h4>Name</h4>
+              <p>{`${generalInfo.firstName} ${generalInfo.lastName}`}</p>
+            </div>
+          </div>
+        </section>
       </div>
     );
   }
