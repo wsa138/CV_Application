@@ -14,3 +14,11 @@
   display: flex;
   justify-content: space-around;
 }
+
+#inputSection {
+  border: solid red 2px;
+}
+
+#displaySection {
+  border: solid blue 2px;
+}

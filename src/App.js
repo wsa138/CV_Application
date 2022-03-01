@@ -112,52 +112,57 @@ class App extends Component {
     return (
       <div id="main-container">
         <h1>CV Application Builder</h1>
-        <form>
-          <div class="inputSectionHeader">
-            <h2>General Info</h2>
-            <h3 name="generalSection" onClick={this.expandSection}>
-              +
-            </h3>
-          </div>
-          {this.state.generalSection.visible ? (
-            <General
-              generalState={this.state.generalState}
-              changeGeneral={this.changeGeneral}
-            />
-          ) : null}
+        <section id="inputSection">
+          <form>
+            <div class="inputSectionHeader">
+              <h2>General Info</h2>
+              <h3 name="generalSection" onClick={this.expandSection}>
+                +
+              </h3>
+            </div>
+            {this.state.generalSection.visible ? (
+              <General
+                generalState={this.state.generalState}
+                changeGeneral={this.changeGeneral}
+              />
+            ) : null}
 
-          <div class="inputSectionHeader">
-            <h2>Education</h2>
-            <h3 name="educationSection" onClick={this.expandSection}>
-              +
-            </h3>
-          </div>
-          {this.state.educationSection.visible ? (
-            <Education
-              educationState={this.state.educationState}
-              changeEducation={this.changeEducation}
-            />
-          ) : null}
+            <div class="inputSectionHeader">
+              <h2>Education</h2>
+              <h3 name="educationSection" onClick={this.expandSection}>
+                +
+              </h3>
+            </div>
+            {this.state.educationSection.visible ? (
+              <Education
+                educationState={this.state.educationState}
+                changeEducation={this.changeEducation}
+              />
+            ) : null}
 
-          <div class="inputSectionHeader">
-            <h2>Work Experience</h2>
-            <h3 name="workSection" onClick={this.expandSection}>
-              +
-            </h3>
-          </div>
-          {this.state.workSection.visible ? (
-            <Work
-              workState={this.state.workState}
-              changeWork={this.changeWork}
-            />
-          ) : null}
-          <button onClick={this.handleSubmit}>Submit</button>
-        </form>
-        <CV
-          educationInfo={this.state.educationState}
-          workInfo={this.state.workState}
-          generalInfo={this.state.generalState}
-        />
+            <div class="inputSectionHeader">
+              <h2>Work Experience</h2>
+              <h3 name="workSection" onClick={this.expandSection}>
+                +
+              </h3>
+            </div>
+            {this.state.workSection.visible ? (
+              <Work
+                workState={this.state.workState}
+                changeWork={this.changeWork}
+              />
+            ) : null}
+            <button onClick={this.handleSubmit}>Submit</button>
+          </form>
+        </section>
+
+        <section id="displaySection">
+          <CV
+            educationInfo={this.state.educationState}
+            workInfo={this.state.workState}
+            generalInfo={this.state.generalState}
+          />
+        </section>
       </div>
     );
   }
