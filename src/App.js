@@ -113,10 +113,12 @@ class App extends Component {
       <div id="main-container">
         <h1>CV Application Builder</h1>
         <form>
-          <h2>General Info</h2>
-          <h3 name="generalSection" onClick={this.expandSection}>
-            +
-          </h3>
+          <div class="inputSectionHeader">
+            <h2>General Info</h2>
+            <h3 name="generalSection" onClick={this.expandSection}>
+              +
+            </h3>
+          </div>
           {this.state.generalSection.visible ? (
             <General
               generalState={this.state.generalState}
@@ -124,10 +126,12 @@ class App extends Component {
             />
           ) : null}
 
-          <h2>Education</h2>
-          <h3 name="educationSection" onClick={this.expandSection}>
-            +
-          </h3>
+          <div class="inputSectionHeader">
+            <h2>Education</h2>
+            <h3 name="educationSection" onClick={this.expandSection}>
+              +
+            </h3>
+          </div>
           {this.state.educationSection.visible ? (
             <Education
               educationState={this.state.educationState}
@@ -135,10 +139,12 @@ class App extends Component {
             />
           ) : null}
 
-          <h2>Work Experience</h2>
-          <h3 name="workSection" onClick={this.expandSection}>
-            +
-          </h3>
+          <div class="inputSectionHeader">
+            <h2>Work Experience</h2>
+            <h3 name="workSection" onClick={this.expandSection}>
+              +
+            </h3>
+          </div>
           {this.state.workSection.visible ? (
             <Work
               workState={this.state.workState}
