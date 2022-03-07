@@ -115,10 +115,13 @@ class App extends Component {
         <section id="inputSection">
           <form>
             <div class="inputSectionHeader">
-              <h2>General Info</h2>
-              <h3 name="generalSection" onClick={this.expandSection}>
-                +
-              </h3>
+              <h2
+                name="generalSection"
+                class="component-section"
+                onClick={this.expandSection}
+              >
+                General Info +
+              </h2>
             </div>
             {this.state.generalSection.visible ? (
               <General
@@ -128,10 +131,13 @@ class App extends Component {
             ) : null}
 
             <div class="inputSectionHeader">
-              <h2>Education</h2>
-              <h3 name="educationSection" onClick={this.expandSection}>
-                +
-              </h3>
+              <h2
+                name="educationSection"
+                class="component-section"
+                onClick={this.expandSection}
+              >
+                Education +
+              </h2>
             </div>
             {this.state.educationSection.visible ? (
               <Education
@@ -141,10 +147,13 @@ class App extends Component {
             ) : null}
 
             <div class="inputSectionHeader">
-              <h2>Work Experience</h2>
-              <h3 name="workSection" onClick={this.expandSection}>
-                +
-              </h3>
+              <h2
+                name="workSection"
+                class="component-section"
+                onClick={this.expandSection}
+              >
+                Work Experience +
+              </h2>
             </div>
             {this.state.workSection.visible ? (
               <Work
