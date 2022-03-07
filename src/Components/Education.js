@@ -11,52 +11,68 @@ class Education extends Component {
     return (
       <div>
         <section className="form-component-section">
-          <label for="college">College:</label>
-          <input
-            id="college"
-            type="text"
-            name="college"
-            value={educationState.college}
-            onChange={this.props.changeEducation}
-          ></input>
+          <div className="row">
+            <div className="col">
+              <label for="college">College:</label>
+              <input
+                id="college"
+                type="text"
+                name="college"
+                value={educationState.college}
+                onChange={this.props.changeEducation}
+              ></input>
+            </div>
+          </div>
 
           <br />
 
-          <label for="major">Major:</label>
-          <input
-            id="major"
-            type="text"
-            name="major"
-            value={educationState.major}
-            onChange={this.props.changeEducation}
-          ></input>
+          <div className="row">
+            <div className="col">
+              <label for="major">Major:</label>
+              <input
+                id="major"
+                type="text"
+                name="major"
+                value={educationState.major}
+                onChange={this.props.changeEducation}
+              ></input>
+            </div>
+          </div>
 
           <br />
 
-          <label for="degree">Degree Awarded:</label>
-          <select
-            id="degree"
-            name="degree"
-            value={educationState.degree}
-            onChange={this.props.changeEducation}
-          >
-            <option value="">--Please Select One--</option>
-            <option value="noDegree">No Degree</option>
-            <option value="associate">Associate's</option>
-            <option value="bachelor">Bachelor's</option>
-            <option value="master">Master's</option>
-          </select>
+          <div className="row">
+            <div className="col">
+              <label for="degree">Degree Awarded:</label>
+              <select
+                id="degree"
+                name="degree"
+                value={educationState.degree}
+                onChange={this.props.changeEducation}
+              >
+                <option value="">--Please Select One--</option>
+                <option value="noDegree">No Degree</option>
+                <option value="associate">Associate's</option>
+                <option value="bachelor">Bachelor's</option>
+                <option value="master">Master's</option>
+              </select>
+            </div>
+          </div>
 
           <br />
 
-          <label for="date">Date:</label>
-          <input
-            id="date"
-            type="date"
-            name="date"
-            value={educationState.date}
-            onChange={this.props.changeEducation}
-          ></input>
+          <div className="row">
+            <div className="col">
+              <label for="date">Date:</label>
+              <input
+                id="date"
+                type="date"
+                name="date"
+                value={educationState.date}
+                onChange={this.props.changeEducation}
+              ></input>
+            </div>
+          </div>
 
           <br />
         </section>
