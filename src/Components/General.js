@@ -29,10 +29,13 @@ class General extends Component {
 
           <br />
 
-          <div className="row">
-            <div className="col">
-              <label for="lastName">Last Name:</label>
+          <div className="form-group row">
+            <label for="lastName" className="col-form-label col-sm-3">
+              Last Name:
+            </label>
+            <div className="col-sm-9">
               <input
+                className="form-control"
                 id="lastName"
                 type="text"
                 name="lastName"
@@ -44,10 +47,13 @@ class General extends Component {
 
           <br />
 
-          <div className="row">
-            <div className="col">
-              <label for="email">Email:</label>
+          <div className="form-group row">
+            <label for="email" className="col-form-label col-sm-3">
+              Email:
+            </label>
+            <div className="col-sm-9">
               <input
+                className="form-control"
                 id="email"
                 type="text"
                 name="email"
@@ -59,10 +65,13 @@ class General extends Component {
 
           <br />
 
-          <div className="row">
-            <div className="col">
-              <label for="phoneNumber">Phone Number:</label>
+          <div className="form-group row">
+            <label for="phoneNumber" className="col-form-label col-sm-3">
+              Phone Number:
+            </label>
+            <div className="col-sm-9">
               <input
+                className="form-control"
                 id="phoneNumber"
                 type="text"
                 name="phoneNumber"
