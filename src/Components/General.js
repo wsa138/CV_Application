@@ -10,11 +10,14 @@ class General extends Component {
     let generalState = this.props.generalState;
     return (
       <div>
-        <section className="form-component-section">
-          <div className="row">
-            <div className="col">
-              <label for="firtName">First Name:</label>
+        <section className="form-component-section container">
+          <div className="form-group row">
+            <label for="firtName" class="col-sm-3 col-form-label">
+              First Name:
+            </label>
+            <div class="col-sm-9">
               <input
+                className="form-control"
                 id="firtName"
                 type="text"
                 name="firstName"

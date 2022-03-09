@@ -1,9 +1,5 @@
-#inputSection {
-  border: solid red 2px;
-}
-
 #displaySection {
-  border: solid blue 2px;
+  border: solid blue 1px;
 }
 
 .component-section {
