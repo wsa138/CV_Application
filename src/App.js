@@ -42,15 +42,10 @@ class App extends Component {
       },
     };
 
-    this.handleSubmit = this.handleSubmit.bind(this);
     this.expandSection = this.expandSection.bind(this);
     this.changeGeneral = this.changeGeneral.bind(this);
     this.changeEducation = this.changeEducation.bind(this);
     this.changeWork = this.changeWork.bind(this);
-  }
-
-  handleSubmit(e) {
-    e.preventDefault();
   }
 
   expandSection(event) {
@@ -161,7 +156,6 @@ class App extends Component {
                 changeWork={this.changeWork}
               />
             ) : null}
-            <button onClick={this.handleSubmit}>Submit</button>
           </form>
         </section>
 

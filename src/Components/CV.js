@@ -13,23 +13,25 @@ class CV extends Component {
     return (
       <div>
         <section id="displayedInfo">
-          <h3>General Info</h3>
           <div className="infoDisplay">
-            <div id="nameDisplay">
-              <h4>Name</h4>
-              <p>{`${generalInfo.firstName} ${generalInfo.lastName}`}</p>
-            </div>
-            <div id="emailDisplay">
-              <h4>Email</h4>
-              <p>{generalInfo.email}</p>
-            </div>
-            <div id="phoneDisplay">
-              <h4>Phone Number</h4>
-              <p>{generalInfo.phoneNumber}</p>
+            <div className="row">
+              <div className="col-sm-8" id="nameDisplay">
+                <h4>Name</h4>
+                <p>{`${generalInfo.firstName} ${generalInfo.lastName}`}</p>
+              </div>
+              <div className="col-sm-4">
+                <div id="emailDisplay">
+                  <h4>Email</h4>
+                  <p>{generalInfo.email}</p>
+                </div>
+                <div id="phoneDisplay">
+                  <h4>Phone Number</h4>
+                  <p>{generalInfo.phoneNumber}</p>
+                </div>
+              </div>
             </div>
           </div>
 
-          <h3>Education</h3>
           <div className="infoDisplay">
             <div id="collegeDisplay">
               <h4>College</h4>
@@ -49,7 +51,6 @@ class CV extends Component {
             </div>
           </div>
 
-          <h3>Work</h3>
           <div className="infoDisplay">
             <div id="jobDisplay">
               <h4>Job</h4>
