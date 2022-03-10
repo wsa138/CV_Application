@@ -105,17 +105,17 @@ class App extends Component {
 
   render() {
     return (
-      <div id="main-container">
-        <h1>CV Application Builder</h1>
+      <div id="main-container container ">
+        <h1 className="text-center">CV Application Builder</h1>
         <section id="inputSection">
           <form>
             <div class="inputSectionHeader">
               <h2
                 name="generalSection"
-                class="component-section"
+                class="component-section text-center"
                 onClick={this.expandSection}
               >
-                General Info +
+                General Info <i className="bi bi-plus"></i>
               </h2>
             </div>
             {this.state.generalSection.visible ? (
@@ -128,7 +128,7 @@ class App extends Component {
             <div class="inputSectionHeader">
               <h2
                 name="educationSection"
-                class="component-section"
+                class="component-section text-center"
                 onClick={this.expandSection}
               >
                 Education +
@@ -144,7 +144,7 @@ class App extends Component {
             <div class="inputSectionHeader">
               <h2
                 name="workSection"
-                class="component-section"
+                class="component-section text-center"
                 onClick={this.expandSection}
               >
                 Work Experience +
