@@ -10,11 +10,14 @@ class Education extends Component {
     let educationState = this.props.educationState;
     return (
       <div>
-        <section className="form-component-section">
-          <div className="row">
-            <div className="col">
-              <label for="college">College:</label>
+        <section className="form-component-section container">
+          <div className="row form-group">
+            <label for="college" className="col-form-label col-sm-3">
+              College:
+            </label>
+            <div className="col-sm-9">
               <input
+                className="form-control"
                 id="college"
                 type="text"
                 name="college"
@@ -26,10 +29,13 @@ class Education extends Component {
 
           <br />
 
-          <div className="row">
-            <div className="col">
-              <label for="major">Major:</label>
+          <div className="row form-group">
+            <label for="major" className="row-form-label col-sm-3">
+              Major:
+            </label>
+            <div className="col-sm-9">
               <input
+                className="form-control"
                 id="major"
                 type="text"
                 name="major"
@@ -41,10 +47,13 @@ class Education extends Component {
 
           <br />
 
-          <div className="row">
-            <div className="col">
-              <label for="degree">Degree Awarded:</label>
+          <div className="row form-group">
+            <label for="degree" className="col-form-label col-sm-3">
+              Degree Awarded:
+            </label>
+            <div className="col-sm-9">
               <select
+                className="form-select"
                 id="degree"
                 name="degree"
                 value={educationState.degree}
@@ -61,9 +70,11 @@ class Education extends Component {
 
           <br />
 
-          <div className="row">
-            <div className="col">
-              <label for="date">Date:</label>
+          <div className="form-group row">
+            <label for="date" className="col-form-label col-sm-3">
+              Date:
+            </label>
+            <div className="col-sm-9">
               <input
                 id="date"
                 type="date"
