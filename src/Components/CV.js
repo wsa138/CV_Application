@@ -13,7 +13,7 @@ class CV extends Component {
     return (
       <div>
         <section id="displayedInfo">
-          <div className="infoDisplay">
+          <div className="infoDisplay container">
             <div className="row">
               <div className="col-sm-8" id="nameDisplay">
                 <h4>Name</h4>
@@ -32,22 +32,26 @@ class CV extends Component {
             </div>
           </div>
 
-          <div className="infoDisplay">
-            <div id="collegeDisplay">
-              <h4>College</h4>
-              <p>{educationInfo.college}</p>
+          <div className="infoDisplay container">
+            <div class="row">
+              <div id="collegeDisplay" class="col-sm-6">
+                <h4>College</h4>
+                <p>{educationInfo.college}</p>
+              </div>
+              <div id="dateDisplay" class="col-sm-6">
+                <h4>Date</h4>
+                <p>{educationInfo.date}</p>
+              </div>
             </div>
-            <div id="dateDisplay">
-              <h4>Date</h4>
-              <p>{educationInfo.date}</p>
-            </div>
-            <div id="degreeDisplay">
-              <h4>Degree</h4>
-              <p>{educationInfo.degree}</p>
-            </div>
-            <div id="majorDisplay">
-              <h4>Major</h4>
-              <p>{educationInfo.major}</p>
+            <div class="row">
+              <div id="degreeDisplay" class="col-sm-6">
+                <h4>Degree</h4>
+                <p>{educationInfo.degree}</p>
+              </div>
+              <div id="majorDisplay" class="col-sm-6">
+                <h4>Major</h4>
+                <p>{educationInfo.major}</p>
+              </div>
             </div>
           </div>
 

@@ -115,7 +115,7 @@ class App extends Component {
                 class="component-section text-center"
                 onClick={this.expandSection}
               >
-                General Info <i class="bi bi-plus"></i>
+                General Info +
               </h2>
             </div>
             {this.state.generalSection.visible ? (
@@ -131,7 +131,7 @@ class App extends Component {
                 class="component-section text-center"
                 onClick={this.expandSection}
               >
-                Education <i class="bi bi-plus"></i>
+                Education +
               </h2>
             </div>
             {this.state.educationSection.visible ? (
@@ -147,7 +147,7 @@ class App extends Component {
                 class="component-section text-center"
                 onClick={this.expandSection}
               >
-                Work Experience <i class="bi bi-plus"></i>
+                Work Experience +
               </h2>
             </div>
             {this.state.workSection.visible ? (
