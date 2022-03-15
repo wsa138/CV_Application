@@ -20,25 +20,26 @@ class App extends Component {
       },
 
       generalState: {
-        firstName: '',
-        lastName: '',
-        email: '',
-        phoneNumber: '',
+        firstName: 'John',
+        lastName: 'Smith',
+        email: 'jsmith@email.com',
+        phoneNumber: '222-555-0100',
       },
 
       educationState: {
-        college: '',
-        major: '',
-        degree: '',
-        date: '',
+        college: 'Cornell',
+        major: 'Computer Science',
+        degree: 'Bachelor',
+        date: '12/21/2021',
       },
 
       workState: {
-        company: '',
-        positionTitle: '',
-        mainTasks: '',
-        startDate: '',
-        endDate: '',
+        company: 'Google',
+        positionTitle: 'Senior Googler',
+        mainTasks:
+          'Google items using google.com. Google more items using google.com.',
+        startDate: '01/01/2020',
+        endDate: '01/02/2020',
       },
     };
 
