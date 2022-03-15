@@ -34,7 +34,7 @@ class App extends Component {
       },
 
       workState: {
-        job: '',
+        company: '',
         positionTitle: '',
         mainTasks: '',
         startDate: '',

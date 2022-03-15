@@ -55,10 +55,10 @@ class CV extends Component {
             </div>
           </div>
 
-          <div className="infoDisplay">
-            <div id="jobDisplay">
-              <h4>Job</h4>
-              <p>{workInfo.job}</p>
+          <div className="infoDisplay container">
+            <div id="companyDisplay">
+              <h4>Company</h4>
+              <p>{workInfo.company}</p>
             </div>
             <div id="positionTitleDisplay">
               <h4>Position Title</h4>

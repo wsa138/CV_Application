@@ -12,16 +12,16 @@ class Work extends Component {
       <div>
         <section className="form-component-section container">
           <div className="form-group row">
-            <label for="job" className="col-form-label col-sm-3">
-              Job:
+            <label for="company" className="col-form-label col-sm-3">
+              Company:
             </label>
             <div className="col-sm-9">
               <input
                 className="form-control"
-                id="job"
+                id="company"
                 type="text"
-                name="job"
-                value={workState.job}
+                name="company"
+                value={workState.company}
                 onChange={this.props.changeWork}
               ></input>
             </div>
