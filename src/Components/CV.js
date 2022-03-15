@@ -56,25 +56,27 @@ class CV extends Component {
           </div>
 
           <div className="infoDisplay container">
-            <div id="companyDisplay">
+            <div id="companyDisplay" class="row">
               <h4>Company</h4>
               <p>{workInfo.company}</p>
             </div>
-            <div id="positionTitleDisplay">
-              <h4>Position Title</h4>
-              <p>{workInfo.positionTitle}</p>
+            <div class="row">
+              <div id="positionTitleDisplay" class="col-sm-8">
+                <h4>Position Title</h4>
+                <p>{workInfo.positionTitle}</p>
+              </div>
+              <div id="startDateDisplay" class="col-sm-2">
+                <h4>Start Date</h4>
+                <p>{workInfo.startDate}</p>
+              </div>
+              <div id="endDateDisplay" class="col-sm-2">
+                <h4>End Date</h4>
+                <p>{workInfo.endDate}</p>
+              </div>
             </div>
-            <div id="mainTasksDisplay">
+            <div id="mainTasksDisplay" class="row">
               <h4>Main Tasks</h4>
               <p>{workInfo.mainTasks}</p>
-            </div>
-            <div id="startDateDisplay">
-              <h4>Start Date</h4>
-              <p>{workInfo.startDate}</p>
-            </div>
-            <div id="endDateDisplay">
-              <h4>End Date</h4>
-              <p>{workInfo.endDate}</p>
             </div>
           </div>
         </section>
