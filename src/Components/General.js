@@ -48,6 +48,24 @@ class General extends Component {
           <br />
 
           <div className="form-group row">
+            <label for="Title" className="col-form-label col-sm-3">
+              Title:
+            </label>
+            <div className="col-sm-9">
+              <input
+                className="form-control"
+                id="title"
+                type="text"
+                name="title"
+                value={generalState.title}
+                onChange={this.props.changeGeneral}
+              ></input>
+            </div>
+          </div>
+
+          <br />
+
+          <div className="form-group row">
             <label for="email" className="col-form-label col-sm-3">
               Email:
             </label>

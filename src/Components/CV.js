@@ -22,9 +22,14 @@ class CV extends Component {
                 <div id="emailDisplay">
                   <p>{generalInfo.email}</p>
                 </div>
-                <div id="phoneDisplay">
-                  <p>{generalInfo.phoneNumber}</p>
-                </div>
+              </div>
+            </div>
+            <div className="row">
+              <div id="titleDisplay" className="col-sm-8">
+                <p>{generalInfo.title}</p>
+              </div>
+              <div id="phoneDisplay" className="col-sm-4">
+                <p>{generalInfo.phoneNumber}</p>
               </div>
             </div>
           </div>

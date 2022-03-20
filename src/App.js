@@ -22,13 +22,14 @@ class App extends Component {
       generalState: {
         firstName: 'John',
         lastName: 'Smith',
+        title: 'Web Developer',
         email: 'jsmith@email.com',
         phoneNumber: '222-555-0100',
       },
 
       educationState: {
-        college: 'Cornell',
-        major: 'Computer Science',
+        college: 'Odin Project University',
+        major: 'Web Development',
         degree: 'Bachelor',
         date: '12/21/2021',
       },
