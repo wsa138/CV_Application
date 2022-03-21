@@ -100,6 +100,23 @@ class General extends Component {
           </div>
 
           <br />
+
+          <div className="form-group row">
+            <label for="summary" className="col-form-label col-sm-3">
+              Summary:
+            </label>
+            <div className="col-sm-9">
+              <textarea
+                rows="4"
+                className="form-control"
+                id="summary"
+                type="text"
+                name="summary"
+                value={generalState.summary}
+                onChange={this.props.changeGeneral}
+              ></textarea>
+            </div>
+          </div>
         </section>
       </div>
     );

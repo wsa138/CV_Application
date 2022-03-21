@@ -32,9 +32,15 @@ class CV extends Component {
                 <p>{generalInfo.phoneNumber}</p>
               </div>
             </div>
+            <div className="row justify-content-center">
+              <div id="summary" className="col-sm-10">
+                <p>{generalInfo.summary}</p>
+              </div>
+            </div>
           </div>
 
           <div className="infoDisplay container">
+            <h2>Experience</h2>
             <div class="row">
               <div id="collegeDisplay" class="col-sm-6">
                 <p>{educationInfo.college}</p>
@@ -54,6 +60,7 @@ class CV extends Component {
           </div>
 
           <div className="infoDisplay container">
+            <h2>Education</h2>
             <div id="companyDisplay" class="row">
               <p>{workInfo.company}</p>
             </div>
