@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import '../style.css';
 
 class CV extends Component {
   constructor(props) {
@@ -15,20 +16,20 @@ class CV extends Component {
         <section id="displayedInfo">
           <div className="infoDisplay container">
             <div className="row">
-              <div className="col-sm-8" id="nameDisplay">
-                <p>{`${generalInfo.firstName} ${generalInfo.lastName}`}</p>
+              <div className="col-sm-8 " id="nameDisplay">
+                <h1>{`${generalInfo.firstName} ${generalInfo.lastName}`}</h1>
               </div>
-              <div className="col-sm-4">
+              <div className="col-sm-4 ">
                 <div id="emailDisplay">
                   <p>{generalInfo.email}</p>
                 </div>
               </div>
             </div>
             <div className="row">
-              <div id="titleDisplay" className="col-sm-8">
+              <div id="titleDisplay" className="col-sm-8 ">
                 <p>{generalInfo.title}</p>
               </div>
-              <div id="phoneDisplay" className="col-sm-4">
+              <div id="phoneDisplay" className="col-sm-4 ">
                 <p>{generalInfo.phoneNumber}</p>
               </div>
             </div>
@@ -40,7 +41,7 @@ class CV extends Component {
           </div>
 
           <div className="infoDisplay container">
-            <h2>Experience</h2>
+            <h2>Education</h2>
             <div class="row">
               <div id="collegeDisplay" class="col-sm-6">
                 <p>{educationInfo.college}</p>
@@ -60,7 +61,7 @@ class CV extends Component {
           </div>
 
           <div className="infoDisplay container">
-            <h2>Education</h2>
+            <h2>Experience</h2>
             <div id="companyDisplay" class="row">
               <p>{workInfo.company}</p>
             </div>
