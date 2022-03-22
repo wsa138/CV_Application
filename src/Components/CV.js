@@ -16,21 +16,19 @@ class CV extends Component {
         <section id="displayedInfo">
           <div className="infoDisplay container">
             <div className="row">
-              <div className="col-sm-8 " id="nameDisplay">
-                <h1>{`${generalInfo.firstName} ${generalInfo.lastName}`}</h1>
+              <div className="col-sm-8" id="nameDisplay">
+                <h1
+                  class="display-5 text-uppercase font-weight-bold"
+                  id="nameText"
+                >{`${generalInfo.firstName} ${generalInfo.lastName}`}</h1>
+                <p id="generalInfoText">{generalInfo.title}</p>
               </div>
-              <div className="col-sm-4 ">
-                <div id="emailDisplay">
-                  <p>{generalInfo.email}</p>
-                </div>
-              </div>
-            </div>
-            <div className="row">
-              <div id="titleDisplay" className="col-sm-8 ">
-                <p>{generalInfo.title}</p>
-              </div>
-              <div id="phoneDisplay" className="col-sm-4 ">
-                <p>{generalInfo.phoneNumber}</p>
+              <div class="col-sm-4" id="emailPhoneText">
+                <p>
+                  {generalInfo.email}
+                  <br />
+                  {generalInfo.phoneNumber}
+                </p>
               </div>
             </div>
             <div className="row justify-content-center">
