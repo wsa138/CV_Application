@@ -23,11 +23,13 @@ class CV extends Component {
                 >{`${generalInfo.firstName} ${generalInfo.lastName}`}</h1>
                 <p id="generalInfoText">{generalInfo.title}</p>
               </div>
-              <div class="col-sm-4" id="emailPhoneText">
+              <div class="col-sm-4" id="emailPhoneLocationText">
                 <p>
                   {generalInfo.email}
                   <br />
                   {generalInfo.phoneNumber}
+                  <br />
+                  {generalInfo.location}
                 </p>
               </div>
             </div>

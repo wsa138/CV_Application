@@ -6,12 +6,14 @@
   cursor: pointer;
 }
 
+/*General info section styling */
 #nameText {
   font-weight: 900;
 }
 
-#emailPhoneText {
+#emailPhoneLocationText {
   margin-top: 1em;
+  font-size: 0.75em;
 }
 
 #nameDisplay {

@@ -102,6 +102,24 @@ class General extends Component {
           <br />
 
           <div className="form-group row">
+            <label for="location" className="col-form-label col-sm-3">
+              Location:
+            </label>
+            <div className="col-sm-9">
+              <input
+                className="form-control"
+                id="location"
+                type="text"
+                name="location"
+                value={generalState.location}
+                onChange={this.props.changeGeneral}
+              ></input>
+            </div>
+          </div>
+
+          <br />
+
+          <div className="form-group row">
             <label for="summary" className="col-form-label col-sm-3">
               Summary:
             </label>
