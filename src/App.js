@@ -110,7 +110,7 @@ class App extends Component {
 
   render() {
     return (
-      <div id="main-container container ">
+      <div id="main-container" className="container">
         <h1 className="text-center">CV Application Builder</h1>
         <section id="inputSection">
           <form>
@@ -164,7 +164,7 @@ class App extends Component {
           </form>
         </section>
 
-        <section id="displaySection">
+        <section id="displaySection" className="">
           <CV
             educationInfo={this.state.educationState}
             workInfo={this.state.workState}

@@ -1,18 +1,29 @@
-#displaySection {
-  border: solid blue 1px;
-}
-
 .component-section {
   cursor: pointer;
 }
 
+/*Displayed information section */
+#displaySection {
+  border: solid blue 1px;
+  max-width: 768px;
+  margin: auto;
+}
+
+#page {
+  padding: 0 1em 0 1em;
+}
+
 /*General info section styling */
+#generalDisplay {
+  margin-top: 3em;
+}
+
 #nameText {
   font-weight: 900;
 }
 
 #emailPhoneLocationText {
-  margin-top: 1em;
+  margin-top: 0.5em;
   font-size: 0.75em;
 }
 
@@ -24,6 +35,15 @@
   position: absolute;
   bottom: -0.7em;
   left: 2em;
+}
+
+.generalIcon {
+  margin-right: 0.5em;
+}
+
+hr {
+  border-top: 2px solid black;
+  opacity: 0.85;
 }
 
 @media only screen and (max-width: 576px) {

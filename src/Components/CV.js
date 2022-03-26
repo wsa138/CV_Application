@@ -12,27 +12,33 @@ class CV extends Component {
     const generalInfo = this.props.generalInfo;
     const workInfo = this.props.workInfo;
     return (
-      <div>
+      <div id="page">
         <section id="displayedInfo">
-          <div className="infoDisplay container">
+          <div className=" container" id="generalDisplay">
             <div className="row">
               <div className="col-sm-8" id="nameDisplay">
                 <h1
                   class="display-5 text-uppercase font-weight-bold"
                   id="nameText"
                 >{`${generalInfo.firstName} ${generalInfo.lastName}`}</h1>
-                <p id="generalInfoText">{generalInfo.title}</p>
+                <p id="generalInfoText" class="text-secondary">
+                  {generalInfo.title}
+                </p>
               </div>
               <div class="col-sm-4" id="emailPhoneLocationText">
                 <p>
+                  <i class="bi bi-envelope generalIcon"></i>
                   {generalInfo.email}
                   <br />
+                  <i class="bi bi-telephone generalIcon"></i>
                   {generalInfo.phoneNumber}
                   <br />
+                  <i class="bi bi-geo-alt generalIcon"></i>
                   {generalInfo.location}
                 </p>
               </div>
             </div>
+            <hr></hr>
             <div className="row justify-content-center">
               <div id="summary" className="col-sm-10">
                 <p>{generalInfo.summary}</p>
