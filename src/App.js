@@ -33,7 +33,7 @@ class App extends Component {
       educationState: {
         college: 'Odin Project University',
         major: 'Web Development',
-        degree: 'Bachelor',
+        degree: 'B.S.',
         date: '12/21/2021',
       },
 

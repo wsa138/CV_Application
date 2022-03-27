@@ -52,16 +52,17 @@ class CV extends Component {
               <div id="collegeDisplay" class="col-sm-6">
                 <p>{educationInfo.college}</p>
               </div>
-              <div id="dateDisplay" class="col-sm-6">
+              <div id="dateDisplay" class="col-sm-6 d-flex justify-content-end">
                 <p>{educationInfo.date}</p>
               </div>
             </div>
             <div class="row">
-              <div id="degreeDisplay" class="col-sm-6">
-                <p>{educationInfo.degree}</p>
-              </div>
-              <div id="majorDisplay" class="col-sm-6">
-                <p>{educationInfo.major}</p>
+              <div id="majorDisplay" class="col d-flex justify-content-end">
+                <p>
+                  {educationInfo.degree}
+                  &nbsp;
+                  {educationInfo.major}
+                </p>
               </div>
             </div>
           </div>

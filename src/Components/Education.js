@@ -60,10 +60,12 @@ class Education extends Component {
                 onChange={this.props.changeEducation}
               >
                 <option value="">--Please Select One--</option>
-                <option value="noDegree">No Degree</option>
-                <option value="associate">Associate's</option>
-                <option value="bachelor">Bachelor's</option>
-                <option value="master">Master's</option>
+                <option value="">No Degree</option>
+                <option value="A.A.">A.A.</option>
+                <option value="A.S.">A.S.</option>
+                <option value="B.S.">B.S.</option>
+                <option value="B.A.">B.A.</option>
+                <option value="M.A.">M.A.</option>
               </select>
             </div>
           </div>
