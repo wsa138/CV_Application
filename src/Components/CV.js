@@ -16,24 +16,24 @@ class CV extends Component {
         <section id="displayedInfo">
           <div className=" container" id="generalDisplay">
             <div className="row">
-              <div className="col-sm-8" id="nameDisplay">
+              <div className="col-md-9 col-sm-8" id="nameDisplay">
                 <h1
-                  class="display-5 text-uppercase font-weight-bold"
+                  class="display-5 text-uppercase font-weight-bold text-primary"
                   id="nameText"
                 >{`${generalInfo.firstName} ${generalInfo.lastName}`}</h1>
                 <p id="generalInfoText" class="text-secondary">
                   {generalInfo.title}
                 </p>
               </div>
-              <div class="col-sm-4" id="emailPhoneLocationText">
+              <div class="col-md-3 col-sm-4" id="emailPhoneLocationText">
                 <p>
-                  <i class="bi bi-envelope generalIcon"></i>
+                  <i class="bi bi-envelope generalIcon text-primary"></i>
                   {generalInfo.email}
                   <br />
-                  <i class="bi bi-telephone generalIcon"></i>
+                  <i class="bi bi-telephone generalIcon text-primary"></i>
                   {generalInfo.phoneNumber}
                   <br />
-                  <i class="bi bi-geo-alt generalIcon"></i>
+                  <i class="bi bi-geo-alt generalIcon text-primary"></i>
                   {generalInfo.location}
                 </p>
               </div>
@@ -47,7 +47,7 @@ class CV extends Component {
           </div>
 
           <div className="infoDisplay container">
-            <h2>Education</h2>
+            <h2 className="text-primary">Education</h2>
             <div class="row">
               <div id="collegeDisplay" class="col-sm-6">
                 <p>{educationInfo.college}</p>
@@ -68,7 +68,7 @@ class CV extends Component {
           </div>
 
           <div className="infoDisplay container">
-            <h2>Experience</h2>
+            <h2 className="text-primary">Experience</h2>
             <div id="companyDisplay" class="row">
               <p>{workInfo.company}</p>
             </div>
