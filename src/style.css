@@ -3,6 +3,10 @@ body {
   background-color: #fefefa;
 }
 
+#main-container {
+  padding-top: 2em;
+}
+
 .component-section {
   cursor: pointer;
 }
