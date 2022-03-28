@@ -56,8 +56,6 @@ class App extends Component {
   expandSection(event) {
     let section = event.target.getAttribute('name');
     let prevVisibility = this.state[section].visible;
-    console.log(prevVisibility);
-    console.log(this.state);
 
     this.setState((prevState) => {
       return {
