@@ -7,6 +7,15 @@ body {
   cursor: pointer;
 }
 
+h1 {
+  font-weight: 900;
+}
+
+/* Form */
+#summarySection {
+  margin-bottom: 1.5em;
+}
+
 /*Displayed information section */
 #displaySection {
   border: solid black 2px;
@@ -31,6 +40,7 @@ body {
 
 #nameText {
   font-weight: 900;
+  font-size: 2.35em;
 }
 
 #emailPhoneLocationText {
@@ -73,6 +83,10 @@ hr {
   }
 }
 
+#dateDisplay {
+  font-size: 0.9em;
+}
+
 /* Experience Section */
 #experienceDisplay {
   margin-bottom: 3em;
@@ -80,4 +94,12 @@ hr {
 
 .experienceRow {
   margin-bottom: -1em;
+}
+
+#startDateDisplay {
+  font-size: 0.9em;
+}
+
+#endDateDisplay {
+  font-size: 0.9em;
 }

@@ -16,7 +16,7 @@ class CV extends Component {
         <section id="displayedInfo">
           <div className=" container" id="generalDisplay">
             <div className="row">
-              <div className="col-md-9 col-sm-8" id="nameDisplay">
+              <div className="col-md-8 col-sm-8" id="nameDisplay">
                 <h1
                   class="display-5 text-uppercase font-weight-bold text-primary"
                   id="nameText"
@@ -25,7 +25,7 @@ class CV extends Component {
                   {generalInfo.title}
                 </p>
               </div>
-              <div class="col-md-3 col-sm-4" id="emailPhoneLocationText">
+              <div class="col-md-4 col-sm-4" id="emailPhoneLocationText">
                 <p>
                   <i class="bi bi-envelope generalIcon text-primary"></i>
                   {generalInfo.email}

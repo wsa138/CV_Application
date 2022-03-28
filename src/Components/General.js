@@ -119,7 +119,7 @@ class General extends Component {
 
           <br />
 
-          <div className="form-group row">
+          <div className="form-group row" id="summarySection">
             <label for="summary" className="col-form-label col-sm-3">
               Summary:
             </label>

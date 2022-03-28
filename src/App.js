@@ -130,7 +130,7 @@ class App extends Component {
               />
             ) : null}
 
-            <div class="inputSectionHeader">
+            <div class="inputSectionHeader" id="educationSection">
               <h2
                 name="educationSection"
                 class="component-section text-center"
