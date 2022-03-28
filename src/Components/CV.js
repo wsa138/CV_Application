@@ -73,12 +73,12 @@ class CV extends Component {
             </div>
           </div>
 
-          <div className="infoDisplay container">
+          <div className="infoDisplay container" id="experienceDisplay">
             <h2 className="text-primary">Experience</h2>
-            <div id="companyDisplay" class="row">
+            <div id="companyDisplay" class="row experienceRow">
               <p>{workInfo.company}</p>
             </div>
-            <div class="row">
+            <div class="row experienceRow">
               <div id="positionTitleDisplay" class="col-sm-8">
                 <p>{workInfo.positionTitle}</p>
               </div>
@@ -89,7 +89,7 @@ class CV extends Component {
                 <p>{workInfo.endDate}</p>
               </div>
             </div>
-            <div id="mainTasksDisplay" class="row">
+            <div id="mainTasksDisplay" class="row experienceRow">
               <p>{workInfo.mainTasks}</p>
             </div>
           </div>

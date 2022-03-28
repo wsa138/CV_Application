@@ -1,3 +1,7 @@
+body {
+  font-family: 'Inter', sans-serif;
+}
+
 .component-section {
   cursor: pointer;
 }
@@ -14,6 +18,10 @@
 }
 
 /*General info section styling */
+#educationDisplay {
+  margin-top: 1em;
+}
+
 #generalDisplay {
   margin-top: 3em;
 }
@@ -61,4 +69,12 @@ hr {
     margin-top: -1em;
   }
 }
+
 /* Experience Section */
+#experienceDisplay {
+  margin-bottom: 3em;
+}
+
+.experienceRow {
+  margin-bottom: -1em;
+}
