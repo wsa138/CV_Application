@@ -16,6 +16,9 @@ h1 {
   margin-bottom: 1.5em;
 }
 
+button {
+  margin: 0.25em 0 0.25em 0;
+}
 /*Displayed information section */
 #displaySection {
   border: solid black 2px;

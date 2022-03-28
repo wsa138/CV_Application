@@ -113,10 +113,10 @@ class App extends Component {
         <h1 className="text-center">CV Application Builder</h1>
         <section id="inputSection">
           <form>
-            <div class="inputSectionHeader">
+            <div class="inputSectionHeader text-center">
               <button
                 name="generalSection"
-                class="component-section text-center"
+                class="component-section text-center btn btn-primary"
                 onClick={this.expandSection}
               >
                 General Info +
@@ -129,10 +129,10 @@ class App extends Component {
               />
             ) : null}
 
-            <div class="inputSectionHeader" id="educationSection">
+            <div class="inputSectionHeader text-center" id="educationSection">
               <button
                 name="educationSection"
-                class="component-section text-center"
+                class="component-section text-center btn btn-primary"
                 onClick={this.expandSection}
               >
                 Education +
@@ -145,10 +145,10 @@ class App extends Component {
               />
             ) : null}
 
-            <div class="inputSectionHeader">
+            <div class="inputSectionHeader text-center">
               <button
                 name="workSection"
-                class="component-section text-center"
+                class="component-section text-center btn btn-primary"
                 onClick={this.expandSection}
               >
                 Work Experience +
