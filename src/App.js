@@ -54,6 +54,7 @@ class App extends Component {
   }
 
   expandSection(event) {
+    event.preventDefault();
     let section = event.target.getAttribute('name');
     let prevVisibility = this.state[section].visible;
 
@@ -113,13 +114,13 @@ class App extends Component {
         <section id="inputSection">
           <form>
             <div class="inputSectionHeader">
-              <h2
+              <button
                 name="generalSection"
                 class="component-section text-center"
                 onClick={this.expandSection}
               >
                 General Info +
-              </h2>
+              </button>
             </div>
             {this.state.generalSection.visible ? (
               <General
@@ -129,13 +130,13 @@ class App extends Component {
             ) : null}
 
             <div class="inputSectionHeader" id="educationSection">
-              <h2
+              <button
                 name="educationSection"
                 class="component-section text-center"
                 onClick={this.expandSection}
               >
                 Education +
-              </h2>
+              </button>
             </div>
             {this.state.educationSection.visible ? (
               <Education
@@ -145,13 +146,13 @@ class App extends Component {
             ) : null}
 
             <div class="inputSectionHeader">
-              <h2
+              <button
                 name="workSection"
                 class="component-section text-center"
                 onClick={this.expandSection}
               >
                 Work Experience +
-              </h2>
+              </button>
             </div>
             {this.state.workSection.visible ? (
               <Work
