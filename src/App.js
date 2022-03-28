@@ -110,7 +110,7 @@ class App extends Component {
   render() {
     return (
       <div id="main-container" className="container">
-        <h1 className="text-center">CV Application Builder</h1>
+        <h1 className="text-center text-primary">CV Application Builder</h1>
         <section id="inputSection">
           <form>
             <div class="inputSectionHeader text-center">

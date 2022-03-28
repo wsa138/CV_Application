@@ -39,7 +39,7 @@ class Work extends Component {
                 id="positionTitle"
                 type="text"
                 name="positionTitle"
-                value={workState.position}
+                value={workState.positionTitle}
                 onChange={this.props.changeWork}
               ></input>
             </div>
