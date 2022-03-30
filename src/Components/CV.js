@@ -14,6 +14,7 @@ class CV extends Component {
     return (
       <div id="page">
         <section id="displayedInfo">
+          {/*General info display section*/}
           <div className=" container" id="generalDisplay">
             <div className="row">
               <div className="col-md-8 col-sm-8" id="nameDisplay">
@@ -46,6 +47,7 @@ class CV extends Component {
             </div>
           </div>
 
+          {/*Education info display section*/}
           <div className="infoDisplay container" id="educationDisplay">
             <h2 className="text-primary">Education</h2>
             <div class="row">
@@ -71,8 +73,33 @@ class CV extends Component {
                 </p>
               </div>
             </div>
+
+            <div class="row">
+              <div id="collegeDisplay" class="col-sm-6">
+                <p>{educationInfo.college}</p>
+              </div>
+              <div
+                id="dateDisplay"
+                class="col-sm-6 d-flex justify-content-sm-end"
+              >
+                <p>{educationInfo.date}</p>
+              </div>
+            </div>
+            <div class="row" id="degreeInfo">
+              <div
+                id="degreeMajorDisplay"
+                class="col d-flex justify-content-sm-end"
+              >
+                <p>
+                  {educationInfo.degree}
+                  &nbsp;
+                  {educationInfo.major}
+                </p>
+              </div>
+            </div>
           </div>
 
+          {/*Experience display section*/}
           <div className="infoDisplay container" id="experienceDisplay">
             <h2 className="text-primary">Experience</h2>
             <div id="companyDisplay" class="row experienceRow">

@@ -53,6 +53,7 @@ class App extends Component {
     this.changeWork = this.changeWork.bind(this);
   }
 
+  //Changes whether an form section is visible or not
   expandSection(event) {
     event.preventDefault();
     let section = event.target.getAttribute('name');
@@ -68,6 +69,7 @@ class App extends Component {
     });
   }
 
+  // General info state function
   changeGeneral(event) {
     const { name, value } = event.target;
     this.setState((prevState) => {
@@ -81,6 +83,7 @@ class App extends Component {
     });
   }
 
+  // Education info state function
   changeEducation(event) {
     const { name, value } = event.target;
     this.setState((prevState) => {
@@ -94,6 +97,7 @@ class App extends Component {
     });
   }
 
+  //Work info state function
   changeWork(event) {
     const { name, value } = event.target;
     this.setState((prevState) => {
@@ -113,6 +117,7 @@ class App extends Component {
         <h1 className="text-center text-primary">CV Application Builder</h1>
         <section id="inputSection">
           <form>
+            {/*General info form section*/}
             <div class="inputSectionHeader text-center">
               <button
                 name="generalSection"
@@ -129,6 +134,7 @@ class App extends Component {
               />
             ) : null}
 
+            {/*Education info form section*/}
             <div class="inputSectionHeader text-center" id="educationSection">
               <button
                 name="educationSection"
@@ -145,6 +151,7 @@ class App extends Component {
               />
             ) : null}
 
+            {/*Work experience form section*/}
             <div class="inputSectionHeader text-center">
               <button
                 name="workSection"
