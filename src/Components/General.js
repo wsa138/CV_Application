@@ -10,7 +10,7 @@ class General extends Component {
     let generalState = this.props.generalState;
     return (
       <div>
-        <section className="form-component-section container">
+        <form className="form-component-section container">
           <div className="form-group row">
             <label for="firstName" class="col-sm-3 col-form-label">
               First Name:
@@ -135,7 +135,7 @@ class General extends Component {
               ></textarea>
             </div>
           </div>
-        </section>
+        </form>
       </div>
     );
   }

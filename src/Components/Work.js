@@ -10,7 +10,7 @@ class Work extends Component {
     let workState = this.props.workState;
     return (
       <div>
-        <section className="form-component-section container">
+        <form className="form-component-section container">
           <div className="form-group row">
             <label for="company" className="col-form-label col-sm-3">
               Company:
@@ -98,7 +98,7 @@ class Work extends Component {
           </div>
 
           <br />
-        </section>
+        </form>
       </div>
     );
   }

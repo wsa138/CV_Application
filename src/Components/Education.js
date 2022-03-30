@@ -10,7 +10,7 @@ class Education extends Component {
     let educationState = this.props.educationState;
     return (
       <div>
-        <section className="form-component-section container">
+        <form className="form-component-section container">
           <div className="row form-group">
             <label for="college" className="col-form-label col-sm-3">
               College:
@@ -88,7 +88,7 @@ class Education extends Component {
           </div>
 
           <br />
-        </section>
+        </form>
       </div>
     );
   }
