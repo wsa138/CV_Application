@@ -73,6 +73,31 @@ class CV extends Component {
                 </p>
               </div>
             </div>
+
+            {/*Fix: Needs to display an all new state for second education.*/}
+            <div class="row">
+              <div id="collegeDisplay" class="col-sm-6">
+                <p>{educationInfo.college}</p>
+              </div>
+              <div
+                id="dateDisplay"
+                class="col-sm-6 d-flex justify-content-sm-end"
+              >
+                <p>{educationInfo.date}</p>
+              </div>
+            </div>
+            <div class="row" id="degreeInfo">
+              <div
+                id="degreeMajorDisplay"
+                class="col d-flex justify-content-sm-end"
+              >
+                <p>
+                  {educationInfo.degree}
+                  &nbsp;
+                  {educationInfo.major}
+                </p>
+              </div>
+            </div>
           </div>
 
           {/*Experience display section*/}
