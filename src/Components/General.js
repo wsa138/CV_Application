@@ -12,10 +12,10 @@ class General extends Component {
       <div>
         <form className="form-component-section container">
           <div className="form-group row">
-            <label for="firstName" class="col-sm-3 col-form-label">
+            <label for="firstName" className="col-sm-3 col-form-label">
               First Name:
             </label>
-            <div class="col-sm-9">
+            <div className="col-sm-9">
               <input
                 className="form-control"
                 id="firstName"

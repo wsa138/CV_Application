@@ -19,22 +19,22 @@ class CV extends Component {
             <div className="row">
               <div className="col-md-8 col-sm-8" id="nameDisplay">
                 <h1
-                  class="display-5 text-uppercase font-weight-bold text-primary"
+                  className="display-5 text-uppercase font-weight-bold text-primary"
                   id="nameText"
                 >{`${generalInfo.firstName} ${generalInfo.lastName}`}</h1>
-                <p id="generalInfoText" class="text-secondary">
+                <p id="generalInfoText" className="text-secondary">
                   {generalInfo.title}
                 </p>
               </div>
-              <div class="col-md-4 col-sm-4" id="emailPhoneLocationText">
+              <div className="col-md-4 col-sm-4" id="emailPhoneLocationText">
                 <p>
-                  <i class="bi bi-envelope generalIcon text-primary"></i>
+                  <i className="bi bi-envelope generalIcon text-primary"></i>
                   {generalInfo.email}
                   <br />
-                  <i class="bi bi-telephone generalIcon text-primary"></i>
+                  <i className="bi bi-telephone generalIcon text-primary"></i>
                   {generalInfo.phoneNumber}
                   <br />
-                  <i class="bi bi-geo-alt generalIcon text-primary"></i>
+                  <i className="bi bi-geo-alt generalIcon text-primary"></i>
                   {generalInfo.location}
                 </p>
               </div>
@@ -50,21 +50,21 @@ class CV extends Component {
           {/*Education info display section*/}
           <div className="infoDisplay container" id="educationDisplay">
             <h2 className="text-primary">Education</h2>
-            <div class="row">
-              <div id="collegeDisplay" class="col-sm-6">
+            <div className="row">
+              <div id="collegeDisplay" className="col-sm-6">
                 <p>{educationInfo.college}</p>
               </div>
               <div
                 id="dateDisplay"
-                class="col-sm-6 d-flex justify-content-sm-end"
+                className="col-sm-6 d-flex justify-content-sm-end"
               >
                 <p>{educationInfo.date}</p>
               </div>
             </div>
-            <div class="row" id="degreeInfo">
+            <div className="row" id="degreeInfo">
               <div
                 id="degreeMajorDisplay"
-                class="col d-flex justify-content-sm-end"
+                className="col d-flex justify-content-sm-end"
               >
                 <p>
                   {educationInfo.degree}
@@ -75,21 +75,21 @@ class CV extends Component {
             </div>
 
             {/*Fix: Needs to display an all new state for second education.*/}
-            <div class="row">
-              <div id="collegeDisplay" class="col-sm-6">
+            <div className="row">
+              <div id="collegeDisplay" className="col-sm-6">
                 <p>{educationInfo.college}</p>
               </div>
               <div
                 id="dateDisplay"
-                class="col-sm-6 d-flex justify-content-sm-end"
+                className="col-sm-6 d-flex justify-content-sm-end"
               >
                 <p>{educationInfo.date}</p>
               </div>
             </div>
-            <div class="row" id="degreeInfo">
+            <div className="row" id="degreeInfo">
               <div
                 id="degreeMajorDisplay"
-                class="col d-flex justify-content-sm-end"
+                className="col d-flex justify-content-sm-end"
               >
                 <p>
                   {educationInfo.degree}
@@ -103,21 +103,21 @@ class CV extends Component {
           {/*Experience display section*/}
           <div className="infoDisplay container" id="experienceDisplay">
             <h2 className="text-primary">Experience</h2>
-            <div id="companyDisplay" class="row experienceRow">
+            <div id="companyDisplay" className="row experienceRow">
               <p>{workInfo.company}</p>
             </div>
-            <div class="row experienceRow">
-              <div id="positionTitleDisplay" class="col-sm-8">
+            <div className="row experienceRow">
+              <div id="positionTitleDisplay" className="col-sm-8">
                 <p>{workInfo.positionTitle}</p>
               </div>
-              <div id="startDateDisplay" class="col-sm-2">
+              <div id="startDateDisplay" className="col-sm-2">
                 <p>{workInfo.startDate}</p>
               </div>
-              <div id="endDateDisplay" class="col-sm-2">
+              <div id="endDateDisplay" className="col-sm-2">
                 <p>{workInfo.endDate}</p>
               </div>
             </div>
-            <div id="mainTasksDisplay" class="row experienceRow">
+            <div id="mainTasksDisplay" className="row experienceRow">
               <p>{workInfo.mainTasks}</p>
             </div>
           </div>

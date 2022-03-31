@@ -116,12 +116,12 @@ class App extends Component {
       <div id="main-container" className="container">
         <h1 className="text-center text-primary">CV Application Builder</h1>
         <section id="inputSection">
-          <form>
+          <div>
             {/*General info form section*/}
-            <div class="inputSectionHeader text-center">
+            <div className="inputSectionHeader text-center">
               <button
                 name="generalSection"
-                class="component-section text-center btn btn-primary"
+                className="component-section text-center btn btn-primary"
                 onClick={this.expandSection}
               >
                 General Info +
@@ -135,10 +135,13 @@ class App extends Component {
             ) : null}
 
             {/*Education info form section*/}
-            <div class="inputSectionHeader text-center" id="educationSection">
+            <div
+              className="inputSectionHeader text-center"
+              id="educationSection"
+            >
               <button
                 name="educationSection"
-                class="component-section text-center btn btn-primary"
+                className="component-section text-center btn btn-primary"
                 onClick={this.expandSection}
               >
                 Education +
@@ -152,10 +155,10 @@ class App extends Component {
             ) : null}
 
             {/*Work experience form section*/}
-            <div class="inputSectionHeader text-center">
+            <div className="inputSectionHeader text-center">
               <button
                 name="workSection"
-                class="component-section text-center btn btn-primary"
+                className="component-section text-center btn btn-primary"
                 onClick={this.expandSection}
               >
                 Work Experience +
@@ -167,7 +170,7 @@ class App extends Component {
                 changeWork={this.changeWork}
               />
             ) : null}
-          </form>
+          </div>
         </section>
 
         <section id="displaySection" className="">

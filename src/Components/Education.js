@@ -6,6 +6,11 @@ class Education extends Component {
     this.state = {};
   }
 
+  displayEducationFormTwo(event) {
+    event.preventDefault();
+    console.log('test');
+  }
+
   render() {
     let educationState = this.props.educationState;
     return (
@@ -89,6 +94,9 @@ class Education extends Component {
 
           <br />
         </form>
+
+        <button>Add Education</button>
+        <div onClick={this.displayEducationFormTwo}>Test</div>
       </div>
     );
   }
