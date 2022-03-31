@@ -3,12 +3,18 @@ import React, { Component } from 'react';
 class Education extends Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = { educationDisplayTwoVisible: false };
+
+    this.displayEducationFormTwo = this.displayEducationFormTwo.bind(this);
   }
 
   displayEducationFormTwo(event) {
     event.preventDefault();
-    console.log('test');
+    this.setState((prevState) => {
+      return {
+        educationDisplayTwoVisible: !prevState.educationDisplayTwoVisible,
+      };
+    });
   }
 
   render() {
@@ -95,8 +101,9 @@ class Education extends Component {
           <br />
         </form>
 
-        <button>Add Education</button>
-        <div onClick={this.displayEducationFormTwo}>Test</div>
+        {/*Button adds another education form*/}
+        <button onClick={this.displayEducationFormTwo}>Add Education</button>
+        {this.state.educationDisplayTwoVisible && <div>Test</div>}
       </div>
     );
   }
