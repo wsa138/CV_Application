@@ -74,16 +74,16 @@ class CV extends Component {
               </div>
             </div>
 
-            {/*Fix: Needs to display an all new state for second education.*/}
+            {/*Second education section display*/}
             <div className="row">
               <div id="collegeDisplay" className="col-sm-6">
-                <p>{educationInfo.college}</p>
+                <p>{educationInfo.college2}</p>
               </div>
               <div
                 id="dateDisplay"
                 className="col-sm-6 d-flex justify-content-sm-end"
               >
-                <p>{educationInfo.date}</p>
+                <p>{educationInfo.date2}</p>
               </div>
             </div>
             <div className="row" id="degreeInfo">
@@ -92,9 +92,9 @@ class CV extends Component {
                 className="col d-flex justify-content-sm-end"
               >
                 <p>
-                  {educationInfo.degree}
+                  {educationInfo.degree2}
                   &nbsp;
-                  {educationInfo.major}
+                  {educationInfo.major2}
                 </p>
               </div>
             </div>
