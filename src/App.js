@@ -35,6 +35,10 @@ class App extends Component {
         major: 'Web Development',
         degree: 'B.S.',
         date: '12/21/2021',
+        college2: '',
+        major2: '',
+        degree2: '',
+        date2: '',
       },
 
       workState: {
