@@ -102,7 +102,7 @@ class Education extends Component {
         </form>
 
         {/*Button adds another education form
-        FIX: Currently uses the same state as the first form*/}
+        FIX: Needs state*/}
         <button onClick={this.displayEducationFormTwo}>Add Education</button>
         {this.state.educationDisplayTwoVisible && (
           <form className="form-component-section container">
@@ -113,10 +113,10 @@ class Education extends Component {
               <div className="col-sm-9">
                 <input
                   className="form-control"
-                  id="college"
+                  id="college2"
                   type="text"
-                  name="college"
-                  value={educationState.college}
+                  name="college2"
+                  value={educationState.college2}
                   onChange={this.props.changeEducation}
                 ></input>
               </div>
@@ -131,10 +131,10 @@ class Education extends Component {
               <div className="col-sm-9">
                 <input
                   className="form-control"
-                  id="major"
+                  id="major2"
                   type="text"
-                  name="major"
-                  value={educationState.major}
+                  name="major2"
+                  value={educationState.major2}
                   onChange={this.props.changeEducation}
                 ></input>
               </div>
@@ -149,9 +149,9 @@ class Education extends Component {
               <div className="col-sm-9">
                 <select
                   className="form-select"
-                  id="degree"
-                  name="degree"
-                  value={educationState.degree}
+                  id="degree2"
+                  name="degree2"
+                  value={educationState.degree2}
                   onChange={this.props.changeEducation}
                 >
                   <option value="">--Please Select One--</option>
@@ -173,10 +173,10 @@ class Education extends Component {
               </label>
               <div className="col-sm-9">
                 <input
-                  id="date"
+                  id="date2"
                   type="date"
-                  name="date"
-                  value={educationState.date}
+                  name="date2"
+                  value={educationState.date2}
                   onChange={this.props.changeEducation}
                 ></input>
               </div>
