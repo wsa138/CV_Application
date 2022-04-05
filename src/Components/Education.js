@@ -102,7 +102,15 @@ class Education extends Component {
         </form>
 
         {/*Button adds another education form*/}
-        <button onClick={this.displayEducationFormTwo}>Add Education</button>
+        <div id="addEducationButton" className="text-center">
+          <button
+            className="btn btn-secondary"
+            onClick={this.displayEducationFormTwo}
+            type="button"
+          >
+            Add Education
+          </button>
+        </div>
         {this.state.educationDisplayTwoVisible && (
           <form className="form-component-section container">
             <div className="row form-group">

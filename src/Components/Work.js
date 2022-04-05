@@ -112,7 +112,15 @@ class Work extends Component {
         </form>
 
         {/*Button adds another experience form*/}
-        <button onClick={this.displayExperienceFormTwo}>Add Experience</button>
+        <div className="text-center">
+          <button
+            className="btn btn-secondary"
+            onClick={this.displayExperienceFormTwo}
+            type="button"
+          >
+            Add Experience
+          </button>
+        </div>
         {this.state.experienceDisplayTwoVisible && (
           <form className="form-component-section container">
             <div className="form-group row">
