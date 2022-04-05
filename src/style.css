@@ -92,12 +92,14 @@ hr {
   }
 }
 
-#dateDisplay {
+#dateDisplay,
+#dateDisplay2 {
   font-size: 0.9em;
 }
 
 /* Experience Section */
-#experienceDisplay {
+#experienceDisplay,
+#experienceDisplay2 {
   margin-bottom: 3em;
 }
 
@@ -105,10 +107,12 @@ hr {
   margin-bottom: -1em;
 }
 
-#startDateDisplay {
+#startDateDisplay,
+#startDateDisplay2 {
   font-size: 0.9em;
 }
 
-#endDateDisplay {
+#endDateDisplay,
+#endDateDisplay2 {
   font-size: 0.9em;
 }

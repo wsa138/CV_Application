@@ -76,11 +76,11 @@ class CV extends Component {
 
             {/*Second education section display*/}
             <div className="row">
-              <div id="collegeDisplay" className="col-sm-6">
+              <div id="collegeDisplay2" className="col-sm-6">
                 <p>{educationInfo.college2}</p>
               </div>
               <div
-                id="dateDisplay"
+                id="dateDisplay2"
                 className="col-sm-6 d-flex justify-content-sm-end"
               >
                 <p>{educationInfo.date2}</p>
@@ -88,7 +88,7 @@ class CV extends Component {
             </div>
             <div className="row" id="degreeInfo">
               <div
-                id="degreeMajorDisplay"
+                id="degreeMajorDisplay2"
                 className="col d-flex justify-content-sm-end"
               >
                 <p>
@@ -122,21 +122,21 @@ class CV extends Component {
             </div>
             <br />
             {/*Second experience display section*/}
-            <div id="companyDisplay" className="row experienceRow">
+            <div id="companyDisplay2" className="row experienceRow">
               <p>{workInfo.company2}</p>
             </div>
             <div className="row experienceRow">
-              <div id="positionTitleDisplay" className="col-sm-8">
+              <div id="positionTitleDisplay2" className="col-sm-8">
                 <p>{workInfo.positionTitle2}</p>
               </div>
-              <div id="startDateDisplay" className="col-sm-2">
+              <div id="startDateDisplay2" className="col-sm-2">
                 <p>{workInfo.startDate2}</p>
               </div>
-              <div id="endDateDisplay" className="col-sm-2">
+              <div id="endDateDisplay2" className="col-sm-2">
                 <p>{workInfo.endDate2}</p>
               </div>
             </div>
-            <div id="mainTasksDisplay" className="row experienceRow">
+            <div id="mainTasksDisplay2" className="row experienceRow">
               <p>{workInfo.mainTasks2}</p>
             </div>
           </div>
