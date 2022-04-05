@@ -106,7 +106,7 @@ class Education extends Component {
         {this.state.educationDisplayTwoVisible && (
           <form className="form-component-section container">
             <div className="row form-group">
-              <label for="college" className="col-form-label col-sm-3">
+              <label for="college2" className="col-form-label col-sm-3">
                 College:
               </label>
               <div className="col-sm-9">
@@ -124,7 +124,7 @@ class Education extends Component {
             <br />
 
             <div className="row form-group">
-              <label for="major" className="row-form-label col-sm-3">
+              <label for="major2" className="row-form-label col-sm-3">
                 Major:
               </label>
               <div className="col-sm-9">
@@ -142,7 +142,7 @@ class Education extends Component {
             <br />
 
             <div className="row form-group">
-              <label for="degree" className="col-form-label col-sm-3">
+              <label for="degree2" className="col-form-label col-sm-3">
                 Degree Awarded:
               </label>
               <div className="col-sm-9">
@@ -167,7 +167,7 @@ class Education extends Component {
             <br />
 
             <div className="form-group row">
-              <label for="date" className="col-form-label col-sm-3">
+              <label for="date2" className="col-form-label col-sm-3">
                 Date:
               </label>
               <div className="col-sm-9">
