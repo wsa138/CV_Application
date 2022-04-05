@@ -120,6 +120,25 @@ class CV extends Component {
             <div id="mainTasksDisplay" className="row experienceRow">
               <p>{workInfo.mainTasks}</p>
             </div>
+            <br />
+            {/*Second experience display section*/}
+            <div id="companyDisplay" className="row experienceRow">
+              <p>{workInfo.company2}</p>
+            </div>
+            <div className="row experienceRow">
+              <div id="positionTitleDisplay" className="col-sm-8">
+                <p>{workInfo.positionTitle2}</p>
+              </div>
+              <div id="startDateDisplay" className="col-sm-2">
+                <p>{workInfo.startDate2}</p>
+              </div>
+              <div id="endDateDisplay" className="col-sm-2">
+                <p>{workInfo.endDate2}</p>
+              </div>
+            </div>
+            <div id="mainTasksDisplay" className="row experienceRow">
+              <p>{workInfo.mainTasks2}</p>
+            </div>
           </div>
         </section>
       </div>
