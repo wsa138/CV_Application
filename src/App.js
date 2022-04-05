@@ -48,12 +48,11 @@ class App extends Component {
           'Google items using google.com. Google more items using google.com.',
         startDate: '01/01/2020',
         endDate: '01/02/2020',
-        company2: 'Google',
-        positionTitle2: 'Senior Googler',
-        mainTasks2:
-          'Google items using google.com. Google more items using google.com.',
-        startDate2: '01/01/2020',
-        endDate2: '01/02/2020',
+        company2: 'Microsoft',
+        positionTitle2: 'Senior Micro Softer',
+        mainTasks2: 'Do Microsoft stuff. Do even more Microsoft stuff.',
+        startDate2: '01/01/2019',
+        endDate2: '01/02/2019',
       },
     };
 
