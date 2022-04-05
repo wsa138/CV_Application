@@ -116,16 +116,16 @@ class Work extends Component {
         {this.state.experienceDisplayTwoVisible && (
           <form className="form-component-section container">
             <div className="form-group row">
-              <label for="company" className="col-form-label col-sm-3">
+              <label for="company2" className="col-form-label col-sm-3">
                 Company:
               </label>
               <div className="col-sm-9">
                 <input
                   className="form-control"
-                  id="company"
+                  id="company2"
                   type="text"
-                  name="company"
-                  value={workState.company}
+                  name="company2"
+                  value={workState.company2}
                   onChange={this.props.changeWork}
                 ></input>
               </div>
@@ -134,16 +134,16 @@ class Work extends Component {
             <br />
 
             <div className="row form-group">
-              <label for="positionTitle" className="col-form-label col-sm-3">
+              <label for="positionTitle2" className="col-form-label col-sm-3">
                 Position Title:
               </label>
               <div className="col-sm-9">
                 <input
                   className="form-control"
-                  id="positionTitle"
+                  id="positionTitle2"
                   type="text"
-                  name="positionTitle"
-                  value={workState.positionTitle}
+                  name="positionTitle2"
+                  value={workState.positionTitle2}
                   onChange={this.props.changeWork}
                 ></input>
               </div>
@@ -152,16 +152,16 @@ class Work extends Component {
             <br />
 
             <div className="row form-group">
-              <label for="mainTasks" className="col-form-label col-sm-3">
+              <label for="mainTasks2" className="col-form-label col-sm-3">
                 Main Tasks:
               </label>
               <div className="col-sm-9">
                 <input
                   className="form-control"
-                  id="mainTasks"
+                  id="mainTasks2"
                   type="text"
-                  name="mainTasks"
-                  value={workState.mainTasks}
+                  name="mainTasks2"
+                  value={workState.mainTasks2}
                   onChange={this.props.changeWork}
                 ></input>
               </div>
@@ -170,15 +170,15 @@ class Work extends Component {
             <br />
 
             <div className="row form-group">
-              <label for="startDate" className="col-form-label col-sm-3">
+              <label for="startDate2" className="col-form-label col-sm-3">
                 Start Date:
               </label>
               <div className="col-sm-9">
                 <input
-                  id="startDate"
+                  id="startDate2"
                   type="date"
-                  name="startDate"
-                  value={workState.startDate}
+                  name="startDate2"
+                  value={workState.startDate2}
                   onChange={this.props.changeWork}
                 ></input>
               </div>
@@ -187,15 +187,15 @@ class Work extends Component {
             <br />
 
             <div className="row form-group">
-              <label for="endDate" className="col-form-label col-sm-3">
+              <label for="endDate2" className="col-form-label col-sm-3">
                 End Date:
               </label>
               <div className="col-sm-9">
                 <input
-                  id="endDate"
+                  id="endDate2"
                   type="date"
-                  name="endDate"
-                  value={workState.endDate}
+                  name="endDate2"
+                  value={workState.endDate2}
                   onChange={this.props.changeWork}
                 ></input>
               </div>
