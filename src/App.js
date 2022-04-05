@@ -35,10 +35,10 @@ class App extends Component {
         major: 'Web Development',
         degree: 'B.S.',
         date: '12/21/2021',
-        college2: 'College2',
-        major2: 'Major2',
+        college2: 'Free Code Camp Institute',
+        major2: 'React',
         degree2: 'A.A.',
-        date2: '12/21/2022',
+        date2: '12/21/2020',
       },
 
       workState: {
