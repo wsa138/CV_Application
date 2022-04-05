@@ -92,6 +92,16 @@ hr {
   }
 }
 
+#educationDisplay .row {
+  padding: 0 0.5em 0 0.5em;
+}
+
+#collegeDisplay,
+#collegeDisplay2 {
+  font-weight: 700;
+  font-size: 1.15em;
+}
+
 #dateDisplay,
 #dateDisplay2 {
   font-size: 0.9em;
@@ -101,6 +111,16 @@ hr {
 #experienceDisplay,
 #experienceDisplay2 {
   margin-bottom: 3em;
+}
+
+#experienceDisplay .row {
+  padding: 0 0.5em 0 0.5em;
+}
+
+#companyDisplay,
+#companyDisplay2 {
+  font-weight: 700;
+  font-size: 1.15em;
 }
 
 .experienceRow {
