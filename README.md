@@ -1,3 +1,3 @@
-Summary: A CV application. This project uses React components to take user input and create a cv application. Most styling was done with Bootstrap classes, with some additional styling in a style sheet.
+Summary: A CV application. This project uses React components to take user input and display that input in the format of a resume. Most styling was done with Bootstrap classes, with some additional styling in the project's style.css file.
 
 The purpose of this project is to work with React components, so that when I encounter them in the wild, they will be familiar. This app has a parent component called "App.js" where state is stored. The functions that are used to change state upon user input are also included in this component. The apporpriate state objects and handler functions are passed to the child components "General.js", "Education.js" and "Work.js". "CV.js" displays the information from the form in a resume style layout.
